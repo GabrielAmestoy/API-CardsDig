@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digimon</title>
+</head>
+<body>
+    <% cards.forEach(card => { %>
+        <article class="product">
+            <a href="/products/detail/<%= card.id %>">
+                <div style="background-color: grey;">
+                    <h3 style="text-align: center;color:#fff"><%= card.name %></h3>
+                    <ul>
+                        <li>Tecnica: <%= card.tecnic %></li>
+                        <li>logo <%= card.type.icono %></li>
+                    </ul>
+                </div>
+            </a>
+        </article>
+    <% }) %>
+    <h1>Entro</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates alias maiores voluptate incidunt, necessitatibus quisquam ipsum nemo soluta corporis amet minima dicta similique magni omnis quibusdam mollitia quae? Et, delectus?</p>
+</body>
+</html>
